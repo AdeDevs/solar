@@ -6,6 +6,7 @@
 }
 
 .home header {
+    background-color: maroon;
     background-image: url(../assets/solar-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
