@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.nav-page {
+  background-color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-page nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+}
+
+nav h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+nav .desk-menu {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.desk-menu li {
+  padding: 3px 7px;
+  transition: .4s ease-in-out;
+}
+
+.desk-menu li:hover {
+  color: #b2b2b2;
+}
+
+.quote {
+  background-color: blue;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  transition: .3s ease-in-out;
+  border: 2px solid blue;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 5px;
+}
+.quote:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.prod {
+  position: relative;
+}
+.prod span {
+  margin-left: 10px;
+  font-size: inherit;
+  display: inline-block;
+}
+.prod span ion-icon {
+  vertical-align: middle;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  gap: 10px;
+  width: 130px;
+  max-height: 0;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  color: #b2b2b2;
+  background-color: #333;
+}
+.dropdown li {
+  text-decoration: underline 2px #333;
+  text-underline-offset: 1px;
+  transition: .4s ease-in-out;
+}
+.dropdown li:hover {
+  text-decoration: 2px underline #b2b2b2;
+}
+.dropdown.show {
+  max-height: 30vh;
+  padding: 10px 0;
+}
+
+.toggle-menu {
+  display: none;
+}
+.toggle-menu ion-icon{
+  border: 2px solid #b2b2b2;
+  border-radius: 20px;
+  vertical-align: middle;
+  display: inline-flex;
+  padding: 3px 10px;
+}
+
+.hamburger {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-direction: column;
+  transition: .4s ease-in-out;
+  gap: 13px;
+  z-index: 1000;
+}
+.hamburger .prod span {
+  font-size: 15px;
+}
+.hamburger.active {
+  max-height: 60vh;
+}
+
+.hamburger .toggle-menu {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 10px 15px 5px  0;
+  box-sizing: border-box;
+}
+.hamburger .toggle-menu ion-icon {
+  border: 2px solid #b2b2b2;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.hamburger  > li {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0 10px;
+  &:nth-last-child(1) {
+    margin-bottom: 15px;
+  }
+}
+
+.hamburger .dropdown {
+  max-height: 0;
+  position: static;
+  background-color: inherit;
+  width: 100%;
+}
+.hamburger .dropdown li {
+  font-size: 13px;
+  color: #b2b2b2;
+  padding-left: 10px;
+}
+.hamburger .dropdown li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.hamburger .dropdown.show{
+  max-height: 40vh;
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: .4s ease-in-out;
+}
+.overlay.show {
+  height: 100vh;
+}
+
+@media (max-width: 700px) {
+  nav .desk-menu, .quote {
+    display: none;
+  }
+  .toggle-menu {
+    display: inherit;
+  }
+  .nav-page nav {
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width:701px) {
+  .hamburger, .overlay {
+    display: none;
+  }
+  nav .desk-menu, .contact {
+    display: inherit;
+  }
+  .toggle-menu {
+    display: none;
+  }
+}
