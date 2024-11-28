@@ -1,7 +1,30 @@
 .home {
     width: 100%;
     box-sizing: border-box;
+    transition: .4s ease-in-out;
     font-family: "Montserrat", sans-serif;
+}
+.home.dark {
+    background-color: #000;
+}
+
+.dark-mode {
+    position: fixed;
+    bottom: 85px;
+    right: 15px;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 4px 10px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    font-family: inherit;
+    z-index: 850;
+    transition: .4s ease-in-out;
+}
+.dark-mode.dark {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
 }
 
 .home header {
@@ -86,12 +109,16 @@ main .about {
     box-sizing: border-box;
     font-family: inherit;
     padding: 40px 15px;
+    transition: .4s ease-in-out;
 }
 
 .about div {
-    background-color: #f2f2f2;
+    background-color: inherit;
     box-sizing: border-box;
     width: 45%;
+}
+.about.dark {
+    color: #fff;
 }
 
 .about .about-info {
@@ -148,6 +175,10 @@ main .about {
     border: 2px solid #000;
     color: #000;
 }
+.about button.dark:hover {
+    border-color: #fff;
+    color: #fff;
+}
 
 .testimonials {
     padding: 20px 15px;
@@ -160,6 +191,10 @@ main .about {
 .testimonials .testimonial-head {
     box-sizing: border-box;
     width: 300px;
+    transition: .4s ease-in-out;
+}
+.testimonial-head.dark {
+    color: #fff;
 }
 
 .testimonial-head h2 {
@@ -211,6 +246,11 @@ main .about {
     height: fit-content;
     padding: 20px 15px;
     border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+.review-box.dark {
+    background-color: #333;
+    color: #fff;
 }
 .review-box > p {
     font-size: 15px;
@@ -220,19 +260,32 @@ main .about {
 .review-box .customer-info {
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     box-sizing: border-box;
     align-items: center;
     gap: 15px;
 }
 .customer-info .avatar {
-    background-image: url(../assets/avatar.jpeg);
+    background-image: url(../assets/ijebu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100%;
     background-position: center;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000;
+}
+.review-box:nth-last-child(1) .avatar{
+    background-image: url(../assets/avatar.jpeg);
+}
+.review-box:nth-last-child(2) .avatar{
+    background-image: url(../assets/bg-girl.jpg);
+}
+.review-box:nth-last-child(3) .avatar{
+    background-image: url(../assets/headwears.jpg);
+}
+.review-box:nth-last-child(4) .avatar{
+    background-image: url(../assets/ebony.jpg);
 }
 .customer-info .customer-name {
     height: fit-content;
@@ -243,7 +296,150 @@ main .about {
 }
 .customer-name p:nth-last-child(1) {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
+    font-style: italic;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .footer-head {
+    background-color: darkblue;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.footer-head h1 {
+    font-size: 3.4em;
+    text-transform: capitalize;
+    font-family: "Comfortaa", sans-serif;
+    width: 500px;
+    font-weight: 500;
+}
+.footer-head form {
+    height: fit-content;
+    width: 400px;
+    box-sizing: border-box;
+    position: relative;
+    align-self: flex-end;
+}
+
+.footer-head form input {
+    border: none;
+    width: 100%;
+    height: 41px;
+    font-family: "m";
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: inherit;
+    padding: 5px 10px;
+}
+.footer-head form button {
+    border: none;
+    box-sizing: border-box;
+    right: 3px;
+    bottom: 3px;
+    padding: 10px 14px;
+    background-color: #00bfff;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.footer-tail {
+    display: inline-flex;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    background-color: darkblue;
+    padding: 30px;
+    justify-content: space-between;
+    border-radius: 0 0 20px 20px;
+    border-top: 1px solid #fff;
+}
+
+.footer-tail .first {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.first p {
+    font-size: 14px;
+    width: 50%;
+    color: #c7c7c7;
+}
+
+.first .socials {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.socials li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.footer-tail .second {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.second ul li {
+    font-size: 14px;
+    cursor: pointer;
+    color: #c7c7c7;
+    transition: .3s ease-in-out;
+    text-decoration: 2px underline darkblue;
+    text-underline-offset: 1px;
+    &:hover {
+        text-decoration: 2px underline #000;
+        text-underline-offset: 3px;
+        color: #000;
+    }
+}
+
+.second ul li:nth-child(1) {
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 950px) {
@@ -282,4 +478,40 @@ main .about {
     .testimonial-head aside {
         width: 100%;
     }
+    footer .footer-head {
+        gap: 15px;
+        flex-direction: column;
+        padding: 30px 12px;
+    }
+    .footer-head h1 {
+        width: 100%;
+        font-size: 2.8em;
+    }
+    .footer-head form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .footer-tail {
+        flex-direction: column;
+        padding: 30px 12px;
+        gap: 20px;
+      }
+      .footer-tail .first {
+        width: 100%;
+      }
+      .first p {
+        width: 100%;
+      }
+      .first .socials {
+        margin-left: -7px;
+      }
+      .footer-tail .second {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 30px;
+        width: 100%;
+      }
+      .second ul {
+        width: fit-content;
+      }
 }

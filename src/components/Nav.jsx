@@ -3,6 +3,11 @@ import { useState } from "react";
 function NavPage() {
     const [isDropDownActive, setIsdropDownActive] = useState(false);
     const [isMenuActive, setIsMenuActive] = useState(false);
+    const [isDarkMode, setIsdarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setIsdarkMode(!isDarkMode)
+    }
 
     const toggleDropDown = () => {
         setIsdropDownActive(!isDropDownActive);
@@ -12,9 +17,9 @@ function NavPage() {
     }
 
     return (
-        <div className="nav-page">
-            <nav>
-                <h1>Solar</h1>
+        <div className={`nav-page ${isDarkMode ? "dark" : ""}`}>
+            <nav className={`${isDarkMode ? "dark" : ""}`}>
+                <h1 onClick={toggleDarkMode}>Solar</h1>
                 <ul className="desk-menu">
                     <li>Why Us</li>
                     <li className="prod" onClick={toggleDropDown}>Products <span><ion-icon name="swap-vertical-outline"></ion-icon></span>
@@ -27,7 +32,7 @@ function NavPage() {
                     <li>Solution</li>
                     <li>Support</li>
                 </ul>
-                <button className="quote">Get Quote</button>
+                <button className={`quote ${isDarkMode ? "dark" : ""}`}>Get Quote</button>
                 <span className="toggle-menu" onClick={toggleMenu}>
                     <ion-icon name="menu-outline" />
                 </span>
