@@ -139,6 +139,55 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className={`contact ${isDarkMode ? "dark" : ""}`}>
+          <h2>Contact</h2>
+          <h1>So, let's do this, let's talk solar.</h1>
+          <form action="" className={`${isDarkMode ? "dark" : ""}`}>
+            <div className="contact-info">
+              <section>
+                <label htmlFor="first-name">first name</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="first-name" type="text" required placeholder="First Name"/>
+              </section>
+              <section>
+                <label htmlFor="last-name">last name</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="last-name" type="text" required placeholder="Last Name"/>
+              </section>
+            </div>
+            <div className="contact-info">
+              <section>
+                <label htmlFor="phone">phone number</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="phone" type="tel" required placeholder="Phone Number"/>
+              </section>
+              <section>
+                <label htmlFor="email">email address</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="email" type="text" required placeholder="Phone Number"/>
+              </section>
+            </div>
+            <div className="contact-info">
+              <section>
+                <label htmlFor="state">select a state</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="state" type="" required placeholder="State"/>
+              </section>
+              <section>
+                <label htmlFor="">zip code</label>
+                <input className={`${isDarkMode ? "dark" : ""}`} id="zip" type="tel" required placeholder="Zip Code"/>
+              </section>
+            </div>
+            <div className="contact-hear">
+              <label htmlFor="hear">How did you hear about us?</label>
+              <input className={`${isDarkMode ? "dark" : ""}`} type="text" id="hear" placeholder="How did you hear about us?"/>
+            </div>
+            <div className="newsletter">
+              <input className={`${isDarkMode ? "dark" : ""}`} type="checkbox" id="newsletter" />
+              <label htmlFor="newsletter">Subscribe to newsletter</label>
+            </div>
+            <div className="contact-hear">
+              <label htmlFor="hear">Anything else to add?</label>
+              <input className={`${isDarkMode ? "dark" : ""}`} type="text" id="hear" placeholder="Anything else to add?"/>
+            </div>
+            <button className={`${isDarkMode ? "dark" : ""}`} type="submit">Submit</button>
+          </form>
+        </div>
       </main>
       <footer>
         <div className="footer-head">
