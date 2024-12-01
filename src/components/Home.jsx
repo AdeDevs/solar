@@ -4,7 +4,7 @@ import ShowLess from "../assets/minus.png";
 import cart from "../assets/cart-outline.svg";
 import addedCart from "../assets/cart.svg";
 import { NavLink } from "react-router-dom";
-import TestImage from "../assets/pouch.png"
+import TestImage from "../assets/cell.png"
 
 function HomePage() {
   const [isDarkMode, setIsdarkMode] = useState(false);

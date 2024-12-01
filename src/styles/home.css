@@ -421,7 +421,7 @@ main .about {
     background-image: url(../assets/bg-girl.jpg);
 }
 .review-box:nth-last-child(3) .avatar{
-    background-image: url(../assets/headwears.jpg);
+    background-image: url(../assets/avatar.jpeg);
 }
 .review-box:nth-last-child(4) .avatar{
     background-image: url(../assets/ebony.jpg);
