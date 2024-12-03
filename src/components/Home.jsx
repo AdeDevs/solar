@@ -70,12 +70,14 @@ function HomePage() {
         </h1>
         <div className="products-box">
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product" >
+                <NavLink to="/products" >
                   <h2>Carabiner Set</h2>
                 </NavLink>
                 <h3>
@@ -93,12 +95,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Off-Road Shoulder Bag</h2>
                 </NavLink>
                 <h3>
@@ -116,12 +120,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Cozy Indoor Sandals</h2>
                 </NavLink>
                 <h3>
@@ -139,12 +145,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Thermo Cup</h2>
                 </NavLink>
                 <h3>
@@ -162,12 +170,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Outdoor Vest</h2>
                 </NavLink>
                 <h3>
@@ -185,12 +195,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Face Cap</h2>
                 </NavLink>
                 <h3>
@@ -208,12 +220,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Fuzzy Cardigan</h2>
                 </NavLink>
                 <h3>
@@ -231,12 +245,14 @@ function HomePage() {
             </div>
           </div>
           <div className="products">
+            <NavLink to="/products">
             <div className="product-image">
               <img src={TestImage} alt="" />
             </div>
+            </NavLink>
             <div className="product-info">
               <aside>
-                <NavLink to="/product">
+                <NavLink to="/products">
                   <h2>Swivel Chair</h2>
                 </NavLink>
                 <h3>

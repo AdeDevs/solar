@@ -58,20 +58,20 @@
     font-size: 3.5em;
     text-align: center;
     font-weight: 700;
-    z-index: 900;
+    z-index: 801;
     text-wrap: wrap;
     text-transform: capitalize;
 }
 
 .home > header p {
-    z-index: 900;
+    z-index: 801;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
 }
 
 .home > header .btns {
-    z-index: 900;
+    z-index: 801;
     display: flex;
     gap: 20px;
 }
@@ -251,6 +251,7 @@ main .about {
     text-decoration: 1px underline #000;
     text-underline-offset: 1px;
     transition: .4s ease-in-out;
+    width: fit-content;
   }
   .product-info a:hover {
     text-underline-offset: 4px;

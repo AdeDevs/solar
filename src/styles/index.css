@@ -7,21 +7,28 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   transition: .3s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 805;
 }
 .nav-page.dark {
   background-color: #fff;
   color: #000;
 }
 
-.nav-page nav {
+.nav-page > nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px 20px;
   position: relative;
   color: #fff;
+}
+.nav-page nav a {
+  color: inherit;
+  text-decoration: none;
 }
 .nav-page nav.dark {
   color: #000;
@@ -46,6 +53,23 @@ nav .desk-menu {
 }
 
 .desk-menu li:hover {
+  color: #b2b2b2;
+}
+
+nav .extras {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.extras li {
+  font-size: 13px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.extras li:hover {
   color: #b2b2b2;
 }
 
@@ -207,7 +231,7 @@ nav .desk-menu {
   .toggle-menu {
     display: inherit;
   }
-  .nav-page nav {
+  .nav-page > nav {
     padding: 20px 15px;
   }
 }
